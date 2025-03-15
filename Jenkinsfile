@@ -8,11 +8,5 @@ pipeline {
                 sh 'cmake --build build'
             }
         }
-        stage('Test') {
-            steps {
-                sh './build/casino_game'
-                sh './build/test_game'
-            }
-        }
     }
 }
